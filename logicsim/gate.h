@@ -35,4 +35,11 @@ class Or2Gate : public Gate
       Event* update(uint64_t);
 };
 
+class NotGate : public Gate{
+   public:
+   //creating Not Gate
+      NotGate(Wire*, Wire*, Wire*);
+      Event* update(uint64_t);
+
+}
 #endif

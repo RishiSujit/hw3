@@ -82,10 +82,29 @@ int main(int argc, char* argv[])
     // Feel free to update any code below this point
     // -----------------------------------------------
     Node* head = readList(argv[1]);
-    cout << "Original list: ";
+    cout <<  "This is original list:";
     print(head);
 
-    // Test out your linked list code
+
+    /*Node* head = readList(argv[1]);
+    print(head);
+    */
+
+    Node* smaller = NULL;
+    Node* larger = NULL;
+    //arbitrary pivot value
+    int pivot = 5;
+    //testing pivot
+    llpivot(head, smaller, larger, pivot);
+    print(larger);
+    print(smaller);
+    //testing isEven
+    Node* head2 = readList(argv[1]);
+    print head2;
+
+    
+    isEven pred;
+    print(llfilter(head2, pred));
 
 
 
